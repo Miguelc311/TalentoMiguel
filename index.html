@@ -92,7 +92,7 @@
     .hero-content { max-width: 680px; }
     .hero-visual { position: relative; margin: 0 14px 22px 0; }
     .hero-team-photo { width: 100%; height: 365px; object-fit: cover; border: 1px solid rgba(255, 255, 255, .35); border-radius: 24px; box-shadow: 0 24px 60px rgba(4, 25, 38, .32); }
-    .hero-portrait-card { position: absolute; right: -24px; bottom: -22px; display: flex; align-items: center; gap: 12px; max-width: 260px; padding: 10px 18px 10px 10px; border: 1px solid rgba(255, 255, 255, .75); border-radius: 16px; background: var(--white); color: var(--ink); box-shadow: 0 14px 34px rgba(4, 25, 38, .24); }
+    .hero-portrait-card { position: absolute; right: -24px; bottom: -22px; display: flex; align-items: center; gap: 12px; max-width: 260px; padding: 10px 18px 10px 10px; border: 1px solid rgba(255, 255, 255, .16); border-radius: 14px; background: rgba(255, 255, 255, .10); backdrop-filter: blur(8px); }
     .hero-portrait-card img { width: 62px; height: 70px; object-fit: cover; object-position: center 22%; border-radius: 10px; }
     .hero-portrait-card span { display: grid; font-size: 11px; font-weight: 700; line-height: 1.45; }
     .hero-portrait-card small { color: var(--muted); font-size: 9px; font-weight: 500; }
@@ -179,7 +179,8 @@
     .contact-copy { padding-top: 10px; }
     .contact-copy p:not(.eyebrow) { max-width: 390px; color: var(--muted); }
     .contact-detail { margin-top: 27px; color: var(--blue-dark); font-size: 13px; font-weight: 600; }
-    .location-link { margin-top: 18px; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+    .location-link { margin-top: 0; }
     .contact-form { padding: 30px; border: 1px solid rgba(197, 204, 210, .65); border-radius: 18px; background: var(--white); box-shadow: var(--shadow); }
     .form-field { margin-bottom: 18px; }
     .form-field label { display: block; margin-bottom: 7px; font-size: 12px; font-weight: 600; }
@@ -397,9 +398,14 @@
           <h2 id="contact-title">¿Listos para dar el siguiente paso?</h2>
           <p>Cuéntame qué necesita tu organización y pensemos juntos en una solución que genere impacto.</p>
           <div class="contact-detail">Te responderé lo antes posible.</div>
-          <a class="button location-link" href="https://www.google.com/maps/search/?api=1&amp;query=Cali%2C%20Colombia" target="_blank" rel="noopener noreferrer" aria-label="Abrir ubicación de Cali, Colombia en Google Maps">
-            Ver ubicación en Google Maps <span class="arrow" aria-hidden="true">↗</span>
-          </a>
+          <div class="contact-links">
+            <a class="button" href="https://www.linkedin.com/in/miguelcarrillogonzalez/" target="_blank" rel="noopener noreferrer" aria-label="Visitar el perfil de LinkedIn de Miguel Carrillo">
+              LinkedIn <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="button location-link" href="https://www.google.com/maps/search/?api=1&query=Cali%2C%20Colombia" target="_blank" rel="noopener noreferrer" aria-label="Abrir ubicación de Cali, Colombia en Google Maps">
+              Ver ubicación en Google Maps <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
         </div>
         <form class="contact-form" id="contact-form">
           <div class="form-field">
@@ -426,8 +432,8 @@
     <div class="container footer-inner">
       <p class="copyright">© <span id="current-year"></span> Miguel Carrillo. Todos los derechos reservados.</p>
       <ul class="social-links" aria-label="Redes sociales">
-        <li><a href="https://www.linkedin.com/in/miguelcarrillogonzalez/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        <li><a href="https://wa.me/573105204486?text=Hola%2C%20Miguel.%20Me%20gustar%C3%ADa%20conversar%20sobre%20tus%20servicios%20de%20recursos%20humanos." target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        <li><a href="https://www.linkedin.com/in/miguelcarrillogonzalez/" target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn de Miguel Carrillo">LinkedIn</a></li>
+        <li><a href="https://wa.me/573105204486?text=Hola%2C%20Miguel.%20Me%20gustar%C3%ADa%20conversar%20sobre%20tus%20servicios%20de%20recursos%20humanos." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp con Miguel Carrillo">WhatsApp</a></li>
       </ul>
     </div>
   </footer>
